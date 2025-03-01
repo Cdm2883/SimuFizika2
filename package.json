@@ -1,0 +1,36 @@
+{
+  "name": "simu-fizika2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon",
+    "dev:engine": "gradlew :engine:jsBrowserDevelopmentLibraryDistribution",
+    "dev:next": "next dev --turbopack",
+    "build": "npm run build:engine && npm run build:next",
+    "build:engine": "gradlew :engine:jsBrowserProductionLibraryDistribution",
+    "build:next": "next build",
+    "start": "npm run build && npx serve@latest out",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "simu-fizika2-engine": "file:./engine/build/dist/js/productionLibrary"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin": "^4.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "15.2.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "nodemon": "^3.1.9",
+    "simu-fizika2-engine": "file:./engine/build/dist/js/developmentLibrary",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0"
+  }
+}

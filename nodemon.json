@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "engine"
+  ],
+  "ext": "kt,kts",
+  "exec": "npm run dev:engine && npm run dev:next"
+}

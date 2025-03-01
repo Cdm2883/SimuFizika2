@@ -1,4 +1,4 @@
-rootProject.name = "gradle-multi-module-project-template"
+rootProject.name = "SimuFizika2"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -15,4 +15,4 @@ dependencyResolutionManagement {
     }
 }
 
-//include(":")
+include(":engine")
