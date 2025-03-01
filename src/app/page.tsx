@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Test } from "simu-fizika2-engine";
 
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
     return (

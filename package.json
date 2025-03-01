@@ -29,6 +29,7 @@
     "eslint-config-next": "15.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "nodemon": "^3.1.9",
+    "sass-embedded": "^1.85.1",
     "simu-fizika2-engine": "file:./engine/build/dist/js/developmentLibrary",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.25.0"
